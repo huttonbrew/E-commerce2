@@ -1,0 +1,195 @@
+* {
+  margin: 0 auto;
+  padding: 0 auto;
+  box-sizing: border-box
+}
+
+li{
+  list-style:none;
+}
+
+a{
+  text-decoration: none;
+}
+
+.navbar{
+  background:chocolate;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav{
+  max-width: 1200px;
+  margin: 0 auto;
+  background:chocolate;
+
+}
+
+nav .logoBtn{
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+  align-items: center;
+  color: white;
+  display: flex;
+
+}
+
+nav .logoBtn a img{
+  width: 200px;
+  margin-right:5px;
+}
+
+
+nav .logoBtn:hover{
+  opacity:0.9;
+
+}
+
+
+
+nav .logoBtn a{
+  opacity:1;
+color:white;
+display: flex;
+align-items: center;
+}
+
+nav .logoBtn a:hover{
+  opacity:1;
+
+}
+
+nav .logoBtn a p{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+nav .logoBtn a p span{
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: tan
+  
+}
+
+nav .logoBtn .hamburger{
+  border: 1px solid tan;
+  display: inline-block;
+  cursor: pointer;
+  
+}
+
+
+nav .logoBtn .hamburger .bar{
+  background:tan ;
+  padding: 1px;
+  width: 35px;
+  height: 3px;
+  margin: 4px;
+
+
+  
+}
+
+.links li{
+  font-size: 18px;
+  color: black;
+  padding: 25px;
+  display:inline-table;
+  margin: 2px 0;
+  align-items: center;
+  position: relative;
+}
+
+
+
+
+ .links li a:hover{
+   color:black;
+   padding: 10px 20px;
+ }
+
+ .shopping-icon{
+   display: block;
+ }
+
+/* .link-nav{
+  align-items: center;
+} */
+
+.mobile-shopping{
+  display: block;
+  align-self: center;
+  margin-top: 5px;
+  position:relative;
+  margin-top: 5px
+}
+
+.mobile-shopping span{
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  top: -10px;
+  left: 100px;
+  background: black;
+  
+}
+
+
+
+.new-links-navigation{
+  background: chocolate;
+  position: fixed;
+  bottom: 0;
+top:0 ;
+width: 100%;
+transition: all 0.5s ease-in-out;
+transform: translate(-100%);
+
+
+
+}
+
+/* .nav-btn{
+  margin: 10px 20px;
+  position: relative;
+  text-align: right;
+  font-style: 30px ;
+} */
+
+
+.nav-btn span{
+  cursor:pointer;
+
+}
+
+@media screen and (min-width:664px){
+  
+}
+
+.links-navigation{
+  position: relative;
+}
+
+.about-img{
+
+ margin: 20px auto;
+ padding: 10px;
+ 
+
+}
+.about-img img{
+  width: 40%;
+  height: 40%;
+  margin-left:auto ;
+  margin-right: auto;
+  display: block;
+  
+}
+ 

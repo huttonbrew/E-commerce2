@@ -1,0 +1,29 @@
+.home{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 170vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.banner{
+    color: white;
+    font-style: italic;
+    letter-spacing: 0.2rem;
+    padding: 10px;
+    animation-name: texts;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    margin-top: -400px;
+    font-size: 40px;
+
+}
+
+@keyframes texts{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,25 @@
+.cart h3{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-style: italic;
+
+}
+
+.cart-info{
+    text-align: center;
+}
+
+.single-cart .cart-img{
+   
+    border:1px solid lightgray;
+    background: #ccc;
+    border-radius: 10px;
+
+}
+
+.cart-results{
+    border: 1px solid gray;
+    background:chocolate ;
+}
