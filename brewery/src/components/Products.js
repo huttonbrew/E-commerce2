@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Product from './Product';
 import { Data } from './Data';
 import './Product.css';
+import {connect} from 'react-redux';
+import { getItems } from '../actions/itemActions';
 //import { useSelector } from 'react-redux';
 //import axios from "axios"
 
 const Products = (props) => {
 
 
-    const [state, setState] = useState(Data);
+    // const [state, setState] = useState(Data);
 
+// useEffect(()=>{
+//     props.getItems();
+// }, )
 
+//  const {items} = props.item;
+//  console.log(items)
 
 
   return (
@@ -18,8 +25,10 @@ const Products = (props) => {
         <div className = "inside-container">
             <h3>Products</h3>
             
-
-            {state.map(product=> <Product key={product._id} data={product} />)}
+            <div className="products-center">
+            {Data.map(product=> <Product key={product.id} data={product} />)}
+            </div>
+            
             
         </div>
 
@@ -28,4 +37,12 @@ const Products = (props) => {
   )
 }
 
-export default Products
+// const mapStateToProps = (state) => ({
+//     item:state.item
+// })
+const mapStateToProps = (state) =>({
+    item:state.item
+})
+
+ export default (Products)
+ //connect(mapStateToProps, {getItems})

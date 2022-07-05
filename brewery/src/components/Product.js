@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 
 
+
 const Product = (props) => {
       const {data} = props;
     // const products = useSelector((state) => state.all.products);
@@ -13,7 +14,7 @@ const Product = (props) => {
      <div className= "product" >
         <div className="box-img">
             {/* <img src = {image} alt = {title} /> */}
-            <Link to ={`/details/${data._id}`}><img src = {data.imageUrl} alt = "" /></Link>
+            <Link to ={`/details/${data.id}`}><img src = {data.imageUrl} alt = "" /></Link>
 
         </div>
 
@@ -26,7 +27,7 @@ const Product = (props) => {
 
         <div className = "product-btn">
             <button>Add to Cart</button>
-s
+
         </div>
         <div className = "inCart">
             <span>Already in Cart</span>
